@@ -89,7 +89,7 @@
                             </a>
                         </div>
                     </div>
-                
+                    @can('user_access')
                     <div class="p-6 border-t border-gray-200 md:border-l">
                         <div class="flex items-center">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-400"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
@@ -102,6 +102,7 @@
                             </div>
                         </div>
                     </div>
+                    @endcan
                 </div>
                 
             </div>

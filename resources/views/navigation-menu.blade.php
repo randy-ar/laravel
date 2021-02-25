@@ -30,14 +30,14 @@
                         </x-jet-nav-link>
                     </div>
                 @endcan
-                @can('category_access')
+                {{-- @can('category_access')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-jet-nav-link href="{{ route('category.index') }}" :active="request()->routeIs('category.*')">
                             Category
                         </x-jet-nav-link>
                     </div>
-                @endcan
-                @can('task_access')
+                @endcan --}}
+                @can('user_access')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-jet-nav-link href="{{ route('logs.index') }}" :active="request()->routeIs('tasks.*')">
                             Logs
